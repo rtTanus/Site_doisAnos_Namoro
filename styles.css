@@ -1,0 +1,371 @@
+body{
+    background: rgb(233, 233, 233)    ;
+    color: black;
+}
+
+header{
+    margin-bottom: 100px;
+}
+
+.navbar{
+    background-color: rgb(170, 0, 255);
+    color: rgb(9, 0, 78);
+    font-style: italic;
+    font-size: 20px;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.purplePart{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.purple h1{
+    text-align: center;
+}
+
+.purplePart {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
+    gap: 20px; /* Espaço entre os elementos */
+    margin: 0 5%;
+    text-align: center;
+}
+
+.purplePart .textPurpleBox {
+    width: 30%; /* Ajuste para ocupar mais espaço */
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 5px;
+    height: auto; /* Permite que o texto ajuste dinamicamente */
+    min-height: 35vh;
+}
+
+.purple {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
+    gap: 20px; /* Espaço entre os elementos */
+    margin: 0 5%;
+    text-align: center;
+}
+
+.purple #second_Carrosel {
+    width: 50%;
+    height: 40vh;
+    background-color: blueviolet;
+    padding: 5px;
+}
+
+.purple .carousel-item img {
+    width: 100%; /* Faz a imagem ocupar todo o espaço do carrossel */
+    height: 40vh;
+    object-fit: cover; /* Mantém a proporção das imagens */
+}
+.purple .carousel-item  {
+    width: 100%; /* Faz a imagem ocupar todo o espaço do carrossel */
+    height: 40vh;
+    object-fit: cover; /* Mantém a proporção das imagens */
+}
+.purplePart .carousel-item {
+    width: 45vw;
+    height: 40vh;
+    background-color: blueviolet;
+    padding: 5px;
+
+}
+.purpleMessage{
+    text-align: center;
+        margin-top: 20px;
+    font-size: 20px;
+        margin-left: 10vw;
+    margin-right: 10vw;
+}
+/* Garante que apenas o slide ativo fique visível */
+.purple .carousel-item {
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    width: 100%; /* Garante que não ocupe mais espaço do que deveria */
+}
+
+.purple .carousel-item.active {
+    opacity: 1;
+    position: relative;
+}
+
+/* Ajusta o efeito de transição */
+.purple .carousel-item-next,
+.purple .carousel-item-prev {
+    transform: scale(1.05);
+    opacity: 0;
+}
+
+.purple .carousel-item.active {
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+}
+
+/* Animação dos botões de navegação */
+.purple .carousel-control-prev,
+.purple .carousel-control-next {
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+    transition: transform 0.3s ease-in-out;
+}
+
+.purple .carousel-control-prev:hover,
+.purple .carousel-control-next:hover {
+    transform: scale(1.1);
+}
+
+.green{
+    padding-top: 30px;
+    h1{
+        text-align: center;
+    }
+    .h1Green{
+        display: flex;
+        margin-bottom:20px;
+        justify-content: center;
+        align-items: center;
+    
+        color: rgb(0, 0, 0);
+        width: 90%;
+        margin-left: 5%;
+        border-radius: 10px;
+    }
+}
+
+.yellow{
+    padding-top: 30px;
+    h1{
+        text-align: center;
+    }
+    .h1Yellow{
+        display: flex;
+        justify-content: center;
+        margin-bottom:20px;
+        align-items: center;
+
+        color: rgb(0, 0, 0);
+        width: 90%;
+        margin-left: 5%;
+        border-radius: 10px;
+    }
+}
+
+.container-images-lado{
+
+}
+
+.sobre{
+    height: 100vh;
+    width: 90vw; 
+}
+.container-lado{
+    width: 45vw;
+    height: 50vh;
+    padding-top: 6vh;
+    margin: 0px;
+    margin-left: 6vw;
+    display: inline-block;
+    h3{
+        font-size: 30px;
+        color: black;
+    }
+    h1{
+        color: #000000;
+        font-size: 50px;
+    }
+    p{    
+        margin-top: 2vh;
+        height: 30vh;
+        font-size: 18px;
+        border-radius:20px ;
+        color: #000000;
+        text-align: justify;
+    }
+}
+.botao_trajetoria {
+    background-color: #ffd700; /* Cor de fundo dourada */
+    color: #000; /* Cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 10px;
+    width: 15vw;
+    height: 7vh;
+    
+    font-size: 18px; /* Tamanho do texto */
+    cursor: pointer; /* Cursor de mão ao passar por cima */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.5, background-color 0.3s; /* Efeitos suaves */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .sobreprincipal{
+    height: 100vh;
+    padding-bottom: 10vh ;
+    margin-top: 20px;
+    
+}
+
+.container-images-lado{
+    float: right;
+    display: flex;
+    padding-top: 40px;
+    margin-top: 10vh;
+    margin-right: 39vw;
+    width: 12vh;
+    img{
+        height: 65.8vh;
+        width: 90vh;
+        border-radius: 20px;
+    }
+}
+
+.botao_green {
+    background-color: #45b707; /* Cor de fundo dourada */
+    color: #000; /* Cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 10px;
+    width: 15vw;
+    height: 7vh;
+    
+    font-size: 18px; /* Tamanho do texto */
+    cursor: pointer; /* Cursor de mão ao passar por cima */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.2s, background-color 0.3s; /* Efeitos suaves */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+.botao_purple {
+    background-color: #8c00ff; /* Cor de fundo dourada */
+    color: #000; /* Cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 10px;
+    width: 15vw;
+    height: 7vh;
+    
+    font-size: 18px; /* Tamanho do texto */
+    cursor: pointer; /* Cursor de mão ao passar por cima */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.2s, background-color 0.3s; /* Efeitos suaves */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .botao_yellow {
+    background-color: #ffd700; /* Cor de fundo dourada */
+    color: #000; /* Cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 10px;
+    width: 15vw;
+    height: 7vh;
+    
+    font-size: 18px; /* Tamanho do texto */
+    cursor: pointer; /* Cursor de mão ao passar por cima */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.2s, background-color 0.3s; /* Efeitos suaves */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .botao_red {
+    background-color: #ff0000; /* Cor de fundo dourada */
+    color: #000; /* Cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 10px;
+    width: 15vw;
+    height: 7vh;
+    
+    font-size: 18px; /* Tamanho do texto */
+    cursor: pointer; /* Cursor de mão ao passar por cima */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.2s, background-color 0.3s; /* Efeitos suaves */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  
+
+.conteudo{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.empurrar_cima{
+    margin-top: 2vh;
+}
+
+.green #carouselGreen {
+    width: 50%;
+    height: 40vh;
+
+
+}
+
+.green .carousel-item img {
+    width: 90%; /* Faz a imagem ocupar todo o espaço do carrossel */
+    height: 40vh;
+    object-fit: cover; /* Mantém a proporção das imagens */
+}
+.green .carousel-item  {
+    width: 90%; /* Faz a imagem ocupar todo o espaço do carrossel */
+    height: 40vh;
+    object-fit: cover; /* Mantém a proporção das imagens */
+}
+.green .carousel-item {
+    width: 45vw;
+    height: 40vh;
+    background-color: #45b707;
+    padding: 5px;
+
+}
+
+.green .textPurpleBox {
+    width: 30%; /* Ajuste para ocupar mais espaço */
+    background-color: #45b707;
+    padding: 10px;
+    border-radius: 5px;
+    height: auto; /* Permite que o texto ajuste dinamicamente */
+    min-height: 35vh;
+}
+.yellow .textPurpleBox {
+    width: 30%; /* Ajuste para ocupar mais espaço */
+    background-color: #ffd700;
+    padding: 10px;
+    border-radius: 5px;
+    height: auto; /* Permite que o texto ajuste dinamicamente */
+    min-height: 35vh;
+}
+
+.yellow .textPurple {
+    background-color: #ffd700;
+}
+.yellow .carousel-item {
+    width: 20vw;
+    height: 70vh;
+    background-color: #ffd700;
+    padding: 5px;
+
+}
+
+
+
+.purple #carouselYellow {
+    width: 48%;
+    height: 40vh;
+}
+
+.obrigado{
+    text-align: center;
+}
+
+.imagem_obrigado{
+    width: 50%;
+    height: 40vh;
+    background-color: rgb(226, 43, 43);
+    padding: 5px;
+}
